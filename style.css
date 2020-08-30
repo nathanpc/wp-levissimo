@@ -132,6 +132,63 @@ header, footer, .article-container {
 	margin-right: 1em;
 }
 
+/********************************
+ * General Article Area Styling *
+ ********************************/
+.article-container {
+	line-height: 26px;
+}
+
+article > h2 {
+	margin-bottom: 3px;
+	line-height: 33px;
+}
+
+article > nav {
+	font-size: 16px;
+}
+
+article > nav > a {
+	box-shadow: none;
+}
+
+article > .article-body {
+	text-align: justify;
+}
+
+article > .article-body .image-container {
+	width: 100%;
+	text-align: center;
+}
+
+article > .article-body img {
+	max-width: 100%;
+}
+
+article > .article-body ul li {
+	color: #454545;
+	list-style: none;
+}
+
+article > .article-body ul li::before {
+	position: relative;
+	top: 2px;
+	margin-left: -15px;
+	margin-right: 14px;
+
+	font-family: serif;  /* Fixes a bug with emojis in Chrome for Android. */
+	content: "\25AA\FE0E";
+
+	font-size: 29px;
+	line-height: 21px;
+
+	color: rgb(255, 214, 95);
+}
+
+.table-container {
+	overflow-x: auto;
+}
+
 /*********
  * Pager *
  *********/
