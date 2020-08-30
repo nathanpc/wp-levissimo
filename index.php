@@ -34,7 +34,6 @@
 			<?php get_template_part('entry'); ?>
 			<?php comments_template(); ?>
 		<?php endwhile; endif; ?>
-		<?php get_template_part('nav', 'below'); ?>
 	</main>
 
 	<!-- Sidebar -->
@@ -44,11 +43,7 @@
 
 	<!-- Pager -->
 	<nav class="pager">
-		<p>
-			<!-- |pager.prev| -->
-			<!-- |pager.items| -->
-			<!-- |pager.next| -->
-		</p>
+		<p><?php get_template_part('nav', 'below'); ?></p>
 	</nav>
 
 	<!-- Footer -->
