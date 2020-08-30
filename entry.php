@@ -7,13 +7,11 @@
 	?></nav>
 
 	<div class="article-body">
-		<?php
-			get_template_part('entry', 'content');
+		<?php get_template_part('entry', 'content'); ?>
+	</div>
 
-			if (is_singular()) {
-				get_template_part('entry-footer');
-			}
-		?>
+	<div class="article-footer">
+		<?php get_template_part('entry-footer'); ?>
 	</div>
 </article>
 
