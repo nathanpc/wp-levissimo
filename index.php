@@ -29,6 +29,15 @@
 		<?php get_sidebar(); ?>
 	</aside>-->
 
+	<!-- Pager -->
+	<nav class="pager">
+		<p>
+			<!-- |pager.prev| -->
+			<!-- |pager.items| -->
+			<!-- |pager.next| -->
+		</p>
+	</nav>
+
 	<!-- Footer -->
 	<footer id="footer">
 		<?php get_footer(); ?>
