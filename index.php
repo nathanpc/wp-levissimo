@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Setup -->
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- WordPress Head -->
@@ -30,11 +30,11 @@
 	<!-- Articles -->
 	<main class="article-container">
 		<hr>
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'entry' ); ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php get_template_part('entry'); ?>
 			<?php comments_template(); ?>
 		<?php endwhile; endif; ?>
-		<?php get_template_part( 'nav', 'below' ); ?>
+		<?php get_template_part('nav', 'below'); ?>
 	</main>
 
 	<!-- Sidebar -->
