@@ -5,9 +5,6 @@
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- WordPress Head -->
-	<?php wp_head(); ?>
-
 	<!-- Sanitize -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css" integrity="sha512-uZEpdg8O5w6a2kJ9VKX6MJPr5MIj+R85f7706fR5D+dlr91P0sWQq3mBL/O/cQ8MfAOavO7VjUoJCH55BNsLDw==" crossorigin="anonymous" />
 
@@ -16,6 +13,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/autolinker/prism-autolinker.min.js" integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-ROhjG07IRaPZsryG77+MVyx3ZT5q3sGEGENoGItwc9xgvx+dl+s3D8Ob1zPdbl/iKklMKp7uFemLJFDRw0bvig==" crossorigin="anonymous"></script>
 	<script>Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/components/';</script>
+
+	<!-- WordPress Head -->
+	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 	<!--[if IE]>
