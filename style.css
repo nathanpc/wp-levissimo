@@ -191,6 +191,10 @@ article > .article-body ul li::before {
 	color: rgb(255, 214, 95);
 }
 
+article > .article-body ol li::marker {
+	color: rgb(255, 214, 95);
+}
+
 .table-container {
 	overflow-x: auto;
 }
