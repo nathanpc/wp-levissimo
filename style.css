@@ -156,13 +156,19 @@ article > .article-body {
 	text-align: justify;
 }
 
-article > .article-body .image-container {
+article > .article-body figure {
+	margin: 0;
 	width: 100%;
 	text-align: center;
 }
 
-article > .article-body img {
+article > .article-body figure > img {
 	max-width: 100%;
+}
+
+article > .article-body figcaption {
+	font-size: 16px;
+	color: #454545;
 }
 
 article > .article-body ul li {
@@ -259,8 +265,8 @@ footer > p {
 		margin-right: auto;
 	}
 
-	article > .article-body img {
-		max-width: 900px;
+	article > .article-body figure > img {
+		max-width: 80%;
 	}
 }
 
