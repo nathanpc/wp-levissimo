@@ -17,7 +17,11 @@ Levissimo is distributed under the terms of the GNU GPL
 /*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}*/
 
-/* General layout for the whole page. */
+
+/*************************************
+ * General Layout for the Whole Page *
+ *************************************/
+
 body {
 	font-family: Open Sans, Arial;
 	font-size: 18px;
@@ -77,4 +81,100 @@ tbody > tr {
 
 tbody > tr:last-child {
 	border-bottom: none;
+}
+
+
+/******************
+ * Website Header *
+ ******************/
+
+.title-block {
+	display: inline-block;
+}
+
+.title-block > h1 {
+	margin-bottom: 0;
+}
+
+.title-block > h3 {
+	margin-top: 5px;
+	color: #777
+}
+
+header > nav {
+	text-align: center;
+}
+
+header > nav ul {
+	display: inline-flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	text-align: center;
+
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+header > nav ul > li {
+	margin: 0 auto;
+}
+
+header > nav > ul > li > a {
+	margin: 0 10px;
+}
+
+header, footer, .article-container {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+/*********************************************
+ * Styling specifically for Landscape Phones *
+ *********************************************/
+@media (min-width: 576px) {
+	article .album > .arrow {
+		font-size: 30px;
+	}
+}
+
+/************************************
+ * Styling specifically for Tablets *
+ ************************************/
+@media (min-width: 768px) {
+	article .album > .arrow {
+		font-size: 45px;
+	}
+}
+
+/*************************************
+ * Styling specifically for Desktops *
+ *************************************/
+@media (min-width: 992px) {
+	header, footer, .article-container {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.article-container > article {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	article > .article-body img {
+		max-width: 900px;
+	}
+}
+
+/**********************
+ * Fix prism.js font. *
+ **********************/
+code[class*=language-], pre[class*=language-] {
+	font-size: 16px;
+	line-height: 1.3em;
 }
