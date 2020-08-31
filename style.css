@@ -80,6 +80,10 @@ tbody > tr:last-child {
 	border-bottom: none;
 }
 
+.forced-margin {
+	margin-bottom: 1em;
+}
+
 
 /******************
  * Website Header *
@@ -134,6 +138,22 @@ header, footer, .article-container {
  ********************************/
 .article-container {
 	line-height: 26px;
+}
+
+.article-container > header {
+	text-align: center;
+}
+
+.article-container > header > .description > p {
+	margin-top: -15px;
+}
+
+.article-container > header > nav > .previous {
+	float: left;
+}
+
+.article-container > header > nav > .next {
+	float: right;
 }
 
 article > h2 {
