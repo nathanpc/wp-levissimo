@@ -1,4 +1,4 @@
-<div id="comments-section"><?php
+<div id="comments"><?php
 	if (have_comments()) :
 		global $comments_by_type;
 		$comments_by_type = separate_comments($comments);

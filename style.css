@@ -128,7 +128,7 @@ header > nav > ul > li > a {
 	margin: 0 10px;
 }
 
-header, footer, .article-container, #comments-section {
+header, footer, .article-container, #comments {
 	margin-left: 1em;
 	margin-right: 1em;
 }
@@ -399,14 +399,14 @@ footer > .right {
  * Styling specifically for Desktops *
  *************************************/
 @media (min-width: 992px) {
-	header, footer, .article-container, #comments-section {
+	header, footer, .article-container, #comments {
 		width: 960px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.article-container > article, #comments-section > section,
-	#comments-section > .comment-respond {
+	.article-container > article, #comments > section,
+	#comments > .comment-respond {
 		width: 900px;
 		margin-left: auto;
 		margin-right: auto;
