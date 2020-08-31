@@ -279,6 +279,11 @@ footer > p {
 	article > .article-body > figure > img {
 		max-width: 80%;
 	}
+
+	article > .article-body > figure > figcaption {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 /**********************
