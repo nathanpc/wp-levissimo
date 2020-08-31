@@ -219,6 +219,10 @@ article > .article-body > ol li::marker {
 	color: rgb(255, 214, 95);
 }
 
+article > .article-footer {
+	margin-bottom: 1em;
+}
+
 .table-container {
 	overflow-x: auto;
 }
