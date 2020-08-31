@@ -156,27 +156,34 @@ article > .article-body {
 	text-align: justify;
 }
 
-article > .article-body figure {
+article > .article-body > figure {
 	margin: 0;
 	width: 100%;
 	text-align: center;
 }
 
-article > .article-body figure > img {
+article > .article-body > figure > img {
 	max-width: 100%;
 }
 
-article > .article-body figcaption {
+article > .article-body > figure > figcaption {
 	font-size: 16px;
 	color: #454545;
 }
 
-article > .article-body ul li {
+.blocks-gallery-grid .blocks-gallery-image figcaption, 
+.blocks-gallery-grid .blocks-gallery-item figcaption,
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption {
+	box-sizing: border-box;
+}
+
+article > .article-body > ul li {
 	color: #454545;
 	list-style: none;
 }
 
-article > .article-body ul li::before {
+article > .article-body > ul li::before {
 	position: relative;
 	top: 2px;
 	margin-left: -15px;
@@ -191,7 +198,7 @@ article > .article-body ul li::before {
 	color: rgb(255, 214, 95);
 }
 
-article > .article-body ol li::marker {
+article > .article-body > ol li::marker {
 	color: rgb(255, 214, 95);
 }
 
@@ -269,7 +276,7 @@ footer > p {
 		margin-right: auto;
 	}
 
-	article > .article-body figure > img {
+	article > .article-body > figure > img {
 		max-width: 80%;
 	}
 }
