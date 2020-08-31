@@ -227,6 +227,11 @@ article > .article-footer {
 	overflow-x: auto;
 }
 
+.wp-block-file__button {
+	box-shadow: none;
+	transition: background 0.5s;
+}
+
 /*********
  * Pager *
  *********/
