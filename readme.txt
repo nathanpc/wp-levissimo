@@ -2,7 +2,7 @@
 
 Contributors: nathanpc
 Theme link: https://github.com/nathanpc/wp-levissimo
-Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Tags: full-width, one-column
 Requires at least: 5.5
 Tested up to: 5.5
 Stable tag: master
