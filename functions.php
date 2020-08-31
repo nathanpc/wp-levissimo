@@ -7,7 +7,7 @@ function levissimo_setup() {
 	add_theme_support('post-thumbnails');
 	add_theme_support('html5', array('search-form'));
 	global $content_width;
-	if (! isset($content_width)) { $content_width = 1920; }
+	if (!isset($content_width)) { $content_width = 1920; }
 	register_nav_menus(array('main-menu' => esc_html__('Main Menu', 'levissimo')));
 }
 
@@ -64,14 +64,14 @@ function levissimo_title($title) {
 
 add_filter('the_content_more_link', 'levissimo_read_more_link');
 function levissimo_read_more_link() {
-	if (! is_admin()) {
+	if (!is_admin()) {
 		return ' <a href="' . esc_url(get_permalink()) . '" class="more-link">...</a>';
 	}
 }
 
 add_filter('excerpt_more', 'levissimo_excerpt_read_more_link');
 function levissimo_excerpt_read_more_link($more) {
-	if (! is_admin()) {
+	if (!is_admin()) {
 		global $post;
 		return ' <a href="' . esc_url(get_permalink($post->ID)) . '" class="more-link">...</a>';
 	}
@@ -117,7 +117,7 @@ function levissimo_custom_pings($comment) {
 
 add_filter('get_comments_number', 'levissimo_comment_count', 0);
 function levissimo_comment_count($count) {
-	if (! is_admin()) {
+	if (!is_admin()) {
 		global $id;
 		$get_comments = get_comments('status=approve&post_id=' . $id);
 		$comments_by_type = separate_comments($get_comments);
