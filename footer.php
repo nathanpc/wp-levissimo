@@ -17,9 +17,14 @@
 	</nav>
 
 	<!-- Footer -->
-	<footer id="footer">
-		<p>&copy; <?php echo esc_html(date_i18n(__('Y', 'levissimo'))); ?> <?php echo esc_html(get_bloginfo('name')); ?></p>
-		<p>This blog uses the <a href="https://github.com/nathanpc/wp-levissimo">Levissimo</a> WordPress theme.</p>
+	<footer>
+		<div class="right">&copy; <?php echo esc_html(date_i18n(__('Y', 'levissimo'))); ?> <?php echo esc_html(get_bloginfo('name')); ?></div>
+		
+		<div class="left">
+			<a href="https://github.com/nathanpc/wp-levissimo">Levissimo</a>
+		</div>
+
+		<div style="clear: both;"></div>
 	</footer>
 	<?php wp_footer(); ?>
 </body>

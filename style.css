@@ -358,7 +358,18 @@ article > .article-footer {
  * Footer *
  **********/
 
-footer > p {
+footer {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+footer > .left {
+	display: block;
+	text-align: center;
+}
+
+footer > .right {
+	display: block;
 	text-align: center;
 }
 
@@ -366,6 +377,13 @@ footer > p {
  * Styling specifically for Landscape Phones *
  *********************************************/
 @media (min-width: 576px) {
+	footer > .left {
+		float: left;
+	}
+
+	footer > .right {
+		float: right;
+	}
 }
 
 /************************************
