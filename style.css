@@ -375,6 +375,10 @@ aside > #sidebar > ul {
 	list-style: none;
 }
 
+aside > #sidebar > ul:last-child {
+	display: none;
+}
+
 aside > #sidebar form.search-form {
 	display: block;
 	margin-left: 0;
