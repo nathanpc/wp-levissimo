@@ -182,6 +182,10 @@ article > .article-body {
 	text-align: justify;
 }
 
+article > .article-body > figure:first-child {
+	margin-top: 1em;
+}
+
 article > .article-body > figure {
 	margin: 0;
 	width: 100%;
