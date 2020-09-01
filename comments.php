@@ -44,3 +44,6 @@
 		comment_form();
 	} ?>
 </div>
+<?php if (comments_open()) { ?>
+	<hr>
+<?php } ?>

@@ -1,5 +1,4 @@
 		<!-- Sidebar -->
-		<hr>
 		<aside>
 			<?php get_sidebar(); ?>
 		</aside>
