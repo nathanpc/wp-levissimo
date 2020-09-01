@@ -184,6 +184,7 @@ article > .article-body {
 
 article > .article-body > figure:first-child {
 	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 article > .article-body > figure {
