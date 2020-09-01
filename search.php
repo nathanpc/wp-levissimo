@@ -14,7 +14,7 @@
 					<nav><?php edit_post_link(); ?></nav>
 
 					<div class="article-body">
-						<?php get_template_part('entry', 'content'); ?>
+						<?php get_template_part('entry', 'summary'); ?>
 					</div>
 
 					<div class="entry-links"><?php wp_link_pages(); ?></div>
