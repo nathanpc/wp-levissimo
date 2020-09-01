@@ -366,6 +366,60 @@ article > .article-footer {
 	color: #454545;
 }
 
+/*********************************
+ * Sidebar (More like Bottombar) *
+ *********************************/
+
+aside > #sidebar > ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+aside > #sidebar form.search-form {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+
+aside > #sidebar form.search-form > label {
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+aside > #sidebar form.search-form > label > span {
+	font-weight: bold;
+}
+
+aside > #sidebar form.search-form > label > input {
+	margin-right: 0;
+	width: 100%;
+}
+
+aside > #sidebar form.search-form > input[type=submit] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside > #sidebar > ul[role=navigation] {
+	display: block;
+	text-align: center;
+}
+
+aside > #sidebar > ul[role=navigation] > li {
+	margin: 0 auto;
+}
+
+aside > #sidebar > ul ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+aside > #sidebar > ul h2 {
+	margin-bottom: 0.1em;
+}
+
 /**********
  * Footer *
  **********/
@@ -389,6 +443,14 @@ footer > .right {
  * Styling specifically for Landscape Phones *
  *********************************************/
 @media (min-width: 576px) {
+	aside > #sidebar form.search-form > label > input {
+		width: auto;
+	}
+
+	aside > #sidebar form.search-form > input[type=submit] {
+		display: inline-block;
+	}
+
 	footer > .left {
 		float: left;
 	}
@@ -404,6 +466,39 @@ footer > .right {
 @media (min-width: 768px) {
 	.comment-body .reply {
 		text-align: left;
+	}
+
+	aside > #sidebar form.search-form {
+		display: flex;
+		margin-top: 2em;
+		margin-left: 10%;
+		margin-right: 10%;
+		text-align: left;
+	}
+
+	aside > #sidebar form.search-form > label {
+		display: flex;
+		flex: 3;
+		margin-bottom: 0;
+	}
+
+	aside > #sidebar form.search-form > label > span {
+		flex: 1;
+	}
+
+	aside > #sidebar form.search-form > label > input {
+		margin-right: 10%;
+		flex: 2;
+	}
+
+	aside > #sidebar form.search-form > input[type=submit] {
+		flex: 1;
+	}
+
+	aside > #sidebar > ul[role=navigation] {
+		display: flex;
+		text-align: left;
+		margin-bottom: 2em;
 	}
 }
 

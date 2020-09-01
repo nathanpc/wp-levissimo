@@ -1,7 +1,9 @@
 		<!-- Sidebar -->
-		<!--<aside id="sidebar">
-			<?php //get_sidebar(); ?>
-		</aside>-->
+		<hr>
+		<aside>
+			<?php get_sidebar(); ?>
+		</aside>
+		<hr>
 
 		<!-- Pager -->
 		<?php
