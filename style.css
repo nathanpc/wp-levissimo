@@ -375,6 +375,10 @@ aside > #sidebar > ul {
 	list-style: none;
 }
 
+aside > #sidebar > ul:first-of-type > li:last-child > p {
+	text-align: center;
+}
+
 aside > #sidebar > ul:last-child {
 	display: none;
 }
