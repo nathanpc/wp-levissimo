@@ -29,10 +29,8 @@
 				<h2><?php esc_html_e('Nothing Found', 'levissimo'); ?></h2>
 
 				<div class="article-body">
-					<?php printf(esc_html__("Sorry, nothing matched your search for '%s'. Please try again.", 'levissimo'), get_search_query()); ?>
+					<p><?php printf(esc_html__("Sorry, nothing matched your search for '%s'. Please try again.", 'levissimo'), get_search_query()); ?></p>
 				</div>
-
-				<p><div style="text-align: center"><?php get_search_form(); ?></div></p>
 			</article>
 
 			<hr>
