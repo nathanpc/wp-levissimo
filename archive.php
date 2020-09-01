@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 		<header>
-			<h2><?php single_term_title(); ?></h2>
+			<h2><?php single_month_title(' '); ?></h2>
 			<div class="description"><?php
 				if ('' != the_archive_description()) {
 					echo esc_html(the_archive_description());
